@@ -1,0 +1,15 @@
+trigger_measurement:
+  description: "Trigger a measurement on a device or entity."
+  fields:
+    device:
+      description: "The device id (SGTIN) to trigger measurement for."
+      example: "3034F8EE901298000006FED1"
+      required: false
+    entity_id:
+      description: "The entity_id of a sensor to trigger measurement for."
+      example: "sensor.3034f8ee901298000006fed1_temperature"
+      required: false
+    type:
+      description: "Measurement type: 'temperature' or 'humidity'."
+      example: "temperature"
+      required: false
