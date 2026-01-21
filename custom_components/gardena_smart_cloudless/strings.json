@@ -5,67 +5,18 @@
         "title": "Connect to GARDENA smart bridge",
         "description": "Enter the connection details for your WebSocket bridge.",
         "data": {
-          "host": "Host",
+          "host": "Hostname or IP address",
           "port": "Port",
-          "password": "Password"
-        }
-      },
-      "zeroconf_confirm": {
-        "title": "Discovered GARDENA smart Gateway",
-        "description": "Found gateway at {host}:{port}. Enter the password to continue.",
-        "data": {
-          "password": "Password"
-        }
-      },
-      "select": {
-        "title": "Select devices",
-        "description": "Select which sensor devices to add.",
-        "data": {
-          "selected": "Devices"
+          "password": "Password (optional)"
         }
       }
     },
     "error": {
-      "cannot_connect": "Failed to connect to the bridge",
-      "no_devices": "No sensor devices found"
+      "cannot_connect": "Failed to connect",
+      "unknown": "Unexpected error"
     },
     "abort": {
-      "already_configured": "This bridge is already configured"
-    }
-  },
-  "options": {
-    "step": {
-      "init": {
-        "title": "Configure GARDENA smart",
-        "menu_options": {
-          "configure_connection": "Change connection settings",
-          "manage_devices": "Add or remove devices"
-        }
-      },
-      "configure_connection": {
-        "title": "Connection settings",
-        "description": "Change the host and port for the WebSocket bridge.",
-        "data": {
-          "host": "Host",
-          "port": "Port",
-          "password": "Password"
-        }
-      },
-      "manage_devices": {
-        "title": "Manage devices",
-        "description": "Select which sensor devices to monitor. Found {device_count} devices.",
-        "data": {
-          "selected": "Devices"
-        }
-      }
-    },
-    "error": {
-      "cannot_connect": "Failed to connect to the bridge",
-      "no_devices": "No sensor devices found"
-    },
-    "abort": {
-      "cannot_connect": "Failed to connect to the bridge",
-      "no_devices": "No sensor devices found"
+      "already_configured": "Gateway is already configured"
     }
   }
 }
